@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 // The following equations estimate the calories burned when exercising (source):
 
-// Women: Calories = ( (Age x 0.074) — (Weight x 0.05741) + (Heart Rate x 0.4472) — 20.4022 ) x Time / 4.184
+// Women: Calories = ((Age x 0.074) — (Weight x 0.05741) + (Heart Rate x 0.4472) — 20.4022) x Time / 4.184
 
-// Men: Calories = ( (Age x 0.2017) + (Weight x 0.09036) + (Heart Rate x 0.6309) — 55.0969 ) x Time / 4.184
+// Men: Calories = ( (Age x 0.2017) + (Weight x 0.09036) + (Heart Rate x 0.6309) — 55.0969) x Time / 4.184
 
 // Write a program using inputs age (years), weight (pounds), heart rate (beats per minute), and time (minutes), respectively. Make sure to create only one Scanner object to read all the inputs. Output calories burned for women and men.
 
@@ -38,6 +38,7 @@ public class calories_burned {
 
         // Read inputs
         System.out.println("Enter age:");
+        // 
         age = scnr.nextInt();
         System.out.println("Enter weight:");
         weight = scnr.nextInt();
