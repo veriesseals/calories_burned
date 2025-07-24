@@ -1,5 +1,4 @@
 
-import java.util.Scanner;
 
 // The following equations estimate the calories burned when exercising (source):
 
@@ -20,6 +19,7 @@ import java.util.Scanner;
 // Women: 580.94 calories
 // Men: 891.47 calories
 
+import java.util.Scanner;
 public class calories_burned {
     
     public static void main(String[] args) {
@@ -38,24 +38,24 @@ public class calories_burned {
 
         // Read inputs
         System.out.println("Enter age:");
-        // 
         age = scnr.nextInt();
+        scnr.close();
         System.out.println("Enter weight:");
         weight = scnr.nextInt();
+        scnr.close();
         System.out.println("Enter heart rate:");
         heartRate = scnr.nextInt();
+        scnr.close();
         System.out.println("Enter time:");
         time = scnr.nextInt();
+        scnr.close();
 
 
+        // Women Calerie Burned Expresson
+        womenCalories = ((age * 0.074) - (weight * 0.05741) + (heartRate * 0.4472) - 20.4022) * time / 4.184;
 
-            // Women Calerie Burned Expresson
-            womenCalories = ((age * 0.074) - (weight * 0.05741) + (heartRate * 0.4472) - 20.4022) * time / 4.184;
-
-            // Men Calerie Burned Expresson
-            menCalories = ((age * 0.2017) + (weight * 0.09036) + (heartRate * 0.6309) - 55.0969) * time / 4.184;
-
-
+        // Men Calerie Burned Expresson
+        menCalories = ((age * 0.2017) + (weight * 0.09036) + (heartRate * 0.6309) - 55.0969) * time / 4.184;
 
 
         // System.out.println("Women's Calrories Burned: " + womenCalories);
